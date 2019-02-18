@@ -1,0 +1,17 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  var f = fibonacci (7,1,1);
+  console.log(f);
+}
+
+function fibonacci(n,a,b) {
+  if (n <= 2) {
+    return a;
+  } else {
+    return fibonacci(n - 1, a + b, a);
+  }
+}
